@@ -32,6 +32,14 @@ http://172.30.3.84/nagios
 
 sudo vi /usr/local/nagios/etc/servers/yourhost.cfg
 
+
+# SAdd to nagios cfg file:
+cfg_dir=/etc/nagios/servers
+
+mkdir /etc/nagios/servers
+
+sudo vi /etc/nagios/servers/webapp1.cfg
+
 define host {
         use                             linux-server
         host_name                       yourhost
